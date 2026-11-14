@@ -379,3 +379,12 @@ html,body,body *{font-family:'Barriecito',cursive!important}
   .poster-intro-copy h1{font-size:clamp(43px,calc(10.4vw + 5px),63px);}
   .poster-intro-copy .poster-tagline{font-size:clamp(14px,calc(2.5vw + 5px),18px);}
 }
+
+/* Wider HOME poster green panel: enlarge navigation labels by 5px */
+@media(min-width:761px){
+  .poster-navigation a{font-size:calc(clamp(16px,2.65vw,36px) + 5px)!important;}
+}
+@media(max-width:760px){
+  .poster-navigation{width:40%!important;padding:2% 1%!important;}
+  .poster-navigation a{font-size:clamp(14px,calc(2.45vw + 5px),19px)!important;}
+}
