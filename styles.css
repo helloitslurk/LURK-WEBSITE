@@ -243,3 +243,14 @@ a:hover{transition:color .2s ease}
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 :root{--font:'Barriecito',cursive}
 html,body,body *{font-family:'Barriecito',cursive!important}
+
+
+/* Position live navigation entirely inside the cleared green poster panel */
+.poster-navigation{top:18.4%;right:0;width:30.5%;height:81.6%;padding:4% 2.2%;align-items:center;justify-content:center;gap:clamp(9px,1.9vw,25px)}
+.poster-navigation a{font-family:'Barriecito',cursive!important;font-size:clamp(16px,2.65vw,36px);font-style:normal;letter-spacing:.015em;text-align:center;color:#f7f2df;white-space:nowrap}
+.poster-navigation a:hover,.poster-navigation a:focus-visible{transform:translateX(7px) scale(1.1);color:#d5e84a}
+.poster-navigation a:after{height:2px;margin:4px auto 0}
+@media(max-width:650px){
+ .poster-navigation{top:18.4%;width:30.5%;height:81.6%;padding:3% 1%;gap:clamp(6px,1.8vw,12px)}
+ .poster-navigation a{font-size:clamp(10px,2.6vw,17px);white-space:normal}
+}
