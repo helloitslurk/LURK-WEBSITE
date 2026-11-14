@@ -69,3 +69,62 @@
 .poster-hero{display:block!important;position:relative!important;width:100%!important;height:auto!important;min-height:0!important;overflow:hidden!important;padding:0!important;margin:0!important;line-height:0!important;background:#e9dfcd}
 .poster-artwork{display:block!important;position:relative!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:auto!important;object-fit:contain!important;visibility:visible!important;opacity:1!important}
 .poster-hotspot{line-height:1!important}
+
+
+/* LURK website foundation: editorial sections and category navigation */
+.category-intro{padding:clamp(76px,10vw,142px) 0}
+.section-kicker{display:flex;justify-content:space-between;font:10px var(--mono);letter-spacing:.12em;border-bottom:1px solid var(--line);padding-bottom:14px}
+.category-intro h1{font-size:clamp(64px,11vw,150px);line-height:.82;letter-spacing:-.105em;margin:42px 0 58px;font-weight:900}
+.category-intro h1 em,.story-layout h2 em,.order-layout h2 em,.reviews-layout h2 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.09em}
+.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.category-tile{min-height:clamp(260px,32vw,440px);padding:22px;position:relative;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:transform .25s ease}
+.category-tile:hover{transform:translateY(-6px)}
+.category-matcha{background:#425b3b;color:#f2eadb}
+.category-coffee{background:#d9a77e;color:#20251b}
+.category-specials{background:#ef653b;color:#20251b}
+.category-number,.category-caption{font:10px var(--mono);letter-spacing:.12em}
+.category-name{font-size:clamp(38px,5.3vw,76px);font-weight:900;letter-spacing:-.09em;line-height:.9;overflow-wrap:anywhere}
+.category-arrow{position:absolute;right:20px;top:16px;font-size:28px}
+.category-detail{padding:clamp(70px,10vw,130px) 0;border-top:1px solid rgba(32,37,27,.16)}
+.category-detail-matcha{background:#dfe5cd}
+.category-detail-coffee{background:#e5d0bb}
+.category-detail-specials{background:#f0c3ae}
+.detail-layout{display:grid;grid-template-columns:1fr 2fr auto;gap:24px;align-items:end}
+.detail-layout h2{font-size:clamp(60px,10vw,132px);line-height:.8;letter-spacing:-.1em;margin:0;font-weight:900}
+.detail-layout h2 span{color:var(--orange)}
+.detail-placeholder,.story-placeholder{font-size:14px;line-height:1.7;max-width:420px;margin:24px 0 0}
+.detail-index{font:10px var(--mono);letter-spacing:.1em}
+.story-section{padding:clamp(90px,12vw,160px) 0;background:#e7dfcf}
+.story-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;align-items:start}
+.story-layout h2,.reviews-layout h2{font-size:clamp(58px,9vw,118px);line-height:.85;letter-spacing:-.095em;margin:0}
+.story-layout .story-placeholder{grid-column:2}
+.order-section{background:#425b3b;color:#f2eadb;padding:clamp(75px,10vw,130px) 0}
+.order-layout{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.order-layout h2{font-size:clamp(60px,9vw,118px);line-height:.82;letter-spacing:-.095em;margin:30px 0 0}
+.order-links{display:flex;flex-direction:column;border-top:1px solid rgba(242,234,219,.35)}
+.order-links a{padding:22px 0;border-bottom:1px solid rgba(242,234,219,.35);display:flex;justify-content:space-between;font:12px var(--mono);letter-spacing:.1em}
+.order-links a:hover{color:var(--lime)}
+.order-links small{font:9px var(--mono);opacity:.65;margin-top:16px}
+.reviews-section{padding:clamp(90px,12vw,150px) 0}
+.reviews-layout h2{margin:35px 0 0}
+.reviews-layout .story-placeholder{margin-left:auto}
+.visit-section{scroll-margin-top:20px}
+.category-detail,.story-section,.order-section,.reviews-section{scroll-margin-top:18px}
+@media(max-width:760px){
+ .category-intro{padding:75px 0}
+ .section-kicker{font-size:8px}
+ .category-intro h1{font-size:clamp(58px,16vw,92px);margin:35px 0}
+ .category-grid{grid-template-columns:1fr;gap:10px}
+ .category-tile{min-height:210px;padding:18px}
+ .category-name{font-size:clamp(54px,14vw,78px)}
+ .detail-layout{grid-template-columns:1fr;gap:22px}
+ .detail-layout h2{font-size:clamp(64px,18vw,100px)}
+ .detail-index{display:none}
+ .story-layout{grid-template-columns:1fr;gap:28px}
+ .story-layout h2,.reviews-layout h2{font-size:clamp(55px,15vw,88px)}
+ .story-layout .story-placeholder{grid-column:1}
+ .order-layout{grid-template-columns:1fr;gap:38px}
+ .order-layout h2{font-size:clamp(62px,17vw,96px)}
+ .reviews-layout .story-placeholder{margin-left:0}
+}
+@media(prefers-reduced-motion:reduce){.category-tile{transition:none}}
