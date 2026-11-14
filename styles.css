@@ -333,3 +333,9 @@ html,body,body *{font-family:'Barriecito',cursive!important}
   .visit-inner .visit-map-wrap{width:100%;margin:0;}
   .visit-inner .visit-map{height:330px;}
 }
+
+/* Bring the Find Us headline to the top on mobile */
+@media(max-width:760px){
+  .visit-section.inner-page{padding-top:24px;}
+  .visit-inner h1{margin-top:0;}
+}
