@@ -698,3 +698,56 @@ body:not(.home-page) .instagram-section{
 @media(min-width:851px){
   body.home-page .site-footer{flex:0 0 190px!important;min-height:190px!important;height:190px!important}
 }
+
+
+/* BUSINESS DETAILS LIVE ON OUR LITTLE WORLD, NOT IN THE GLOBAL FOOTER */
+.site-footer{
+  display:flex!important;flex-wrap:wrap!important;
+  justify-content:space-between!important;align-items:center!important;
+  gap:18px!important;width:100%!important;min-height:92px!important;height:auto!important;
+  padding:22px max(28px,calc((100% - 1280px)/2))!important;
+}
+.site-footer>a{display:block!important}
+.site-footer img{display:block!important;width:104px!important;height:auto!important}
+.site-footer>span{
+  display:block!important;margin:0!important;
+  font:500 9px/1.5 var(--mono)!important;letter-spacing:.1em!important;color:var(--ink)!important;
+}
+.business-info-section{
+  background:#e9eddf!important;color:var(--ink)!important;
+  padding:clamp(56px,8vw,104px) 24px!important;
+  border-top:1px solid var(--line)!important;
+}
+.business-info-inner{
+  max-width:1100px!important;margin:0 auto!important;
+  display:grid!important;grid-template-columns:1fr 1fr!important;
+  column-gap:clamp(28px,8vw,110px)!important;row-gap:28px!important;
+  align-items:end!important;
+}
+.business-info-inner>.eyebrow{grid-column:1/-1!important;margin:0!important}
+.business-info-inner h2{
+  margin:0!important;font-size:clamp(42px,6vw,76px)!important;
+  line-height:.9!important;letter-spacing:-.07em!important;
+}
+.business-info-inner h2 em{color:var(--orange)!important}
+.business-info-details{
+  display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+  gap:10px!important;padding-bottom:4px!important;
+}
+.business-info-details strong,
+.business-info-details span,
+.business-info-details a{
+  font:500 12px/1.65 var(--mono)!important;letter-spacing:.035em!important;
+  color:var(--ink)!important;margin:0!important;
+}
+.business-info-details strong{font-weight:700!important}
+.business-info-details a{text-decoration:underline!important;text-underline-offset:4px!important}
+@media(max-width:700px){
+ .site-footer{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;padding:22px 20px!important}
+ .site-footer>a{grid-column:1!important;grid-row:1!important}
+ .site-footer>span:nth-of-type(1){grid-column:1/-1!important;grid-row:2!important}
+ .site-footer>span:nth-of-type(2){grid-column:1/-1!important;grid-row:3!important}
+ .business-info-inner{grid-template-columns:1fr!important;row-gap:22px!important}
+ .business-info-inner>.eyebrow,.business-info-inner h2,.business-info-details{grid-column:1!important}
+ .business-info-inner h2{font-size:clamp(42px,12vw,64px)!important}
+}
