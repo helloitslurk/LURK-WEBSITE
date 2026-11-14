@@ -419,3 +419,29 @@ html,body,body *{font-family:'Barriecito',cursive!important}
   body.home-page .ticker{flex:0 0 auto;padding:13px 0;}
   body.home-page .site-footer{flex:0 0 112px;min-height:112px;height:112px;padding-top:16px;padding-bottom:16px;}
 }
+
+/* DESKTOP HOME: make the central poster fill the full available screen width */
+@media (min-width:851px){
+  body.home-page .poster-hero{
+    width:100%;
+    max-width:none;
+    flex:1 1 0;
+    aspect-ratio:auto;
+    margin:0;
+    align-self:stretch;
+  }
+  body.home-page .poster-artwork{
+    width:100%;
+    height:100%;
+    max-width:none;
+    object-fit:fill;
+  }
+  body.home-page .poster-navigation{
+    right:0;
+    width:31%;
+    max-width:none;
+  }
+  body.home-page .poster-navigation a{
+    white-space:nowrap;
+  }
+}
