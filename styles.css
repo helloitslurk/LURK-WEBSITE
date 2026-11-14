@@ -462,3 +462,22 @@ html,body,body *{font-family:'Barriecito',cursive!important}
 .instagram-embed-wrap{width:100%;min-width:0}
 .instagram-embed-wrap .instagram-media{min-width:0!important;width:100%!important}
 @media(max-width:850px){.instagram-layout{grid-template-columns:1fr;gap:28px}.instagram-heading h2{font-size:clamp(52px,13vw,82px)}}
+
+
+/* SCROLL BEHAVIOR: only HOME is a fixed, no-scroll canvas */
+html,body{overflow-x:hidden;}
+html:not(.home-page){height:auto!important;min-height:100%!important;overflow-y:auto!important;}
+body:not(.home-page){height:auto!important;min-height:100vh!important;overflow-y:auto!important;overflow-x:hidden!important;position:static!important;}
+body:not(.home-page) main,
+body:not(.home-page) .inner-page,
+body:not(.home-page) .story-section,
+body:not(.home-page) .instagram-section{overflow:visible!important;max-height:none!important;}
+@media(min-width:851px){
+  html{overflow-y:auto;}
+  html:has(body.home-page){height:100%;overflow:hidden;}
+  body.home-page{overflow:hidden!important;}
+}
+@media(max-width:850px){
+  html,body{height:auto!important;min-height:100%!important;overflow-y:auto!important;}
+  body.home-page{height:100svh!important;min-height:100svh!important;overflow:hidden!important;}
+}
