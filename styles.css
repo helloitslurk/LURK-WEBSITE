@@ -282,3 +282,32 @@ html,body,body *{font-family:'Barriecito',cursive!important}
 /* Larger, unnumbered MENU category navigation */
 .menu-subnav a{font-size:16px;letter-spacing:.12em}
 @media(max-width:650px){.menu-subnav a{font-size:14px}}
+
+
+/* MENU category sections become full-bleed editorial bands, not boxed cards */
+.menu-category{
+ width:100vw;
+ position:relative;
+ left:50%;
+ margin-left:-50vw;
+ margin-right:0;
+ margin-bottom:0;
+ padding:clamp(38px,5vw,68px) max(24px,calc((100vw - 1280px)/2));
+ border:0;
+ border-top:1px solid var(--line);
+ border-bottom:1px solid var(--line);
+ box-shadow:none;
+}
+.menu-category + .menu-category{border-top:0}
+.menu-category p{
+ max-width:none;
+ width:100%;
+ font-size:clamp(18px,1.55vw,22px);
+ line-height:1.75;
+}
+.menu-category h2{margin-top:44px}
+@media(max-width:760px){
+ .menu-category{padding:34px 24px;min-height:0}
+ .menu-category p{font-size:17px;line-height:1.7}
+ .menu-category h2{margin-top:38px}
+}
