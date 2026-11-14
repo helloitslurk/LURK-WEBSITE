@@ -178,7 +178,7 @@ body{background:var(--paper);color:var(--ink)}
 .ticker{background:var(--lime);color:var(--ink);padding:13px 0}.ticker-track{font-size:11px;letter-spacing:.16em}
 .poster-hero{background:#dce2c9}.poster-artwork{width:100%;height:auto}
 .home-intro{position:relative;isolation:isolate;padding-top:clamp(90px,12vw,160px);padding-bottom:clamp(90px,12vw,160px)}
-.home-intro:before{content:"✳";position:absolute;z-index:-1;right:7%;top:12%;font-size:clamp(130px,24vw,320px);line-height:1;color:#dce5b6;transform:rotate(-13deg)}
+.home-intro:before{content:"";position:absolute;z-index:-1;right:7%;top:12%;font-size:clamp(130px,24vw,320px);line-height:1;color:#dce5b6;transform:rotate(-13deg)}
 .home-intro h1{font-size:clamp(90px,16vw,205px);color:var(--green)}.home-intro h1 em{color:var(--orange)}
 .home-intro>p:not(.eyebrow){font-family:Georgia,serif;font-size:clamp(20px,2.5vw,30px);font-style:italic}
 .home-shortcuts a{border-color:var(--green);color:var(--green);transition:background .2s,color .2s}.home-shortcuts a:hover{background:var(--green);color:var(--paper)}
@@ -186,7 +186,7 @@ body{background:var(--paper);color:var(--ink)}
 .menu-page>h1,.inner-page h1{color:var(--green);font-size:clamp(78px,13vw,166px)}.menu-page>h1 span{color:var(--orange)}
 .menu-subnav{border-color:var(--line);margin:36px 0 28px}.menu-subnav a{font-size:10px;letter-spacing:.14em}.menu-subnav a:hover{color:#82962d}
 .menu-category{position:relative;overflow:hidden;margin-bottom:18px;padding:clamp(30px,5vw,65px);min-height:310px;border:1px solid rgba(41,36,25,.08)}
-.menu-category:after{content:"✳";position:absolute;right:4%;bottom:-22%;font-size:clamp(130px,22vw,270px);line-height:1;opacity:.12;pointer-events:none}
+.menu-category:after{content:"";position:absolute;right:4%;bottom:-22%;font-size:clamp(130px,22vw,270px);line-height:1;opacity:.12;pointer-events:none}
 .menu-matcha{background:#e4e9d2}.menu-coffee{background:#eadbc8}.menu-specials{background:#f2d7c7}
 .menu-category h2{position:relative;z-index:1;color:var(--green);font-size:clamp(65px,10vw,130px);margin:70px 0 20px}
 .menu-category p{position:relative;z-index:1;max-width:470px;font-family:Georgia,serif;font-size:17px}
