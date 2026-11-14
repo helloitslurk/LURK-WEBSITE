@@ -277,3 +277,8 @@ html,body,body *{font-family:'Barriecito',cursive!important}
 .menu-category h2 span{color:var(--orange)}
 .menu-category p{color:var(--ink)}
 .menu-category:hover{border-color:rgba(52,77,53,.42);transition:border-color .25s ease}
+
+
+/* Larger, unnumbered MENU category navigation */
+.menu-subnav a{font-size:16px;letter-spacing:.12em}
+@media(max-width:650px){.menu-subnav a{font-size:14px}}
