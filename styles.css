@@ -63,3 +63,9 @@
  .poster-world-link{left:68%;width:19%}
  .poster-find-link{left:87%;width:11%}
 }
+
+
+/* Hotfix: keep the poster as a normal, visible responsive image */
+.poster-hero{display:block!important;position:relative!important;width:100%!important;height:auto!important;min-height:0!important;overflow:hidden!important;padding:0!important;margin:0!important;line-height:0!important;background:#e9dfcd}
+.poster-artwork{display:block!important;position:relative!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:auto!important;object-fit:contain!important;visibility:visible!important;opacity:1!important}
+.poster-hotspot{line-height:1!important}
