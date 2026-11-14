@@ -254,3 +254,8 @@ html,body,body *{font-family:'Barriecito',cursive!important}
  .poster-navigation{top:18.4%;width:30.5%;height:81.6%;padding:3% 1%;gap:clamp(6px,1.8vw,12px)}
  .poster-navigation a{font-size:clamp(10px,2.6vw,17px);white-space:normal}
 }
+
+
+/* Footer supporting text: increase center and copyright text by 10px */
+.site-footer span{font-size:19px}
+@media(max-width:850px){.site-footer span{font-size:18px}}
