@@ -388,3 +388,34 @@ html,body,body *{font-family:'Barriecito',cursive!important}
   .poster-navigation{width:40%!important;padding:2% 1%!important;}
   .poster-navigation a{font-size:clamp(14px,calc(2.45vw + 5px),19px)!important;}
 }
+
+/* DESKTOP HOME: fit header, poster, ticker and footer inside one viewport */
+@media (min-width:851px){
+  html,body.home-page{height:100%;min-height:100%;overflow:hidden;}
+  body.home-page{height:100vh;height:100svh;min-height:0;display:flex;flex-direction:column;}
+  body.home-page>.site-header{flex:0 0 78px;min-height:78px;height:78px;}
+  body.home-page>main{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;overflow:hidden;}
+  body.home-page .poster-hero{
+    flex:1 1 auto;
+    min-height:0;
+    height:auto;
+    width:auto;
+    max-width:calc((100svh - 228px)*1.5);
+    aspect-ratio:3/2;
+    margin:0 auto;
+    padding:0;
+    overflow:hidden;
+  }
+  body.home-page .poster-artwork{
+    display:block;
+    width:100%;
+    height:100%;
+    max-width:none;
+    aspect-ratio:auto;
+    object-fit:fill;
+  }
+  body.home-page .poster-intro-copy{left:4.5%;width:57%;}
+  body.home-page .poster-navigation{height:100%;}
+  body.home-page .ticker{flex:0 0 auto;padding:13px 0;}
+  body.home-page .site-footer{flex:0 0 112px;min-height:112px;height:112px;padding-top:16px;padding-bottom:16px;}
+}
