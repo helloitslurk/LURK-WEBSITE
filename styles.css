@@ -259,3 +259,21 @@ html,body,body *{font-family:'Barriecito',cursive!important}
 /* Footer supporting text: increase center and copyright text by 10px */
 .site-footer span{font-size:19px}
 @media(max-width:850px){.site-footer span{font-size:18px}}
+
+
+/* MENU page aligned with HOME palette and visual language */
+.menu-page{background:var(--paper)}
+.menu-page>.eyebrow{color:var(--green)}
+.menu-page>h1{color:var(--green)}
+.menu-page>h1 span{color:var(--orange)}
+.menu-subnav{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0}
+.menu-subnav a{color:var(--green);transition:color .2s ease,transform .2s ease}
+.menu-subnav a:hover{color:var(--orange);transform:translateY(-2px)}
+.menu-category{background:var(--paper);border:1px solid var(--line);box-shadow:none}
+.menu-matcha,.menu-coffee,.menu-specials{background:var(--paper)}
+.menu-category:after{color:var(--lime);opacity:.16}
+.menu-category-top{color:var(--green)}
+.menu-category h2{color:var(--green)}
+.menu-category h2 span{color:var(--orange)}
+.menu-category p{color:var(--ink)}
+.menu-category:hover{border-color:rgba(52,77,53,.42);transition:border-color .25s ease}
