@@ -128,3 +128,28 @@
  .reviews-layout .story-placeholder{margin-left:0}
 }
 @media(prefers-reduced-motion:reduce){.category-tile{transition:none}}
+
+
+/* Menu is the parent section; Matcha, Coffee and Specials are its sub-sections */
+.menu-section{padding:clamp(76px,10vw,140px) 0}
+.menu-heading{font-size:clamp(76px,14vw,180px);line-height:.78;letter-spacing:-.11em;margin:44px 0 34px;font-weight:900}
+.menu-heading>span,.menu-category h2>span{color:var(--orange)}
+.menu-subnav{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:36px}
+.menu-subnav a{padding:17px 12px 17px 0;font:10px var(--mono);letter-spacing:.1em}
+.menu-subnav a:hover{color:var(--orange)}
+.menu-category{padding:clamp(35px,6vw,76px);margin:0 0 14px;scroll-margin-top:20px}
+.menu-matcha{background:#dfe5cd}
+.menu-coffee{background:#e5d0bb}
+.menu-specials{background:#f0c3ae}
+.menu-category-top{display:flex;justify-content:space-between;font:10px var(--mono);letter-spacing:.12em}
+.menu-category h2{font-size:clamp(58px,10vw,128px);line-height:.82;letter-spacing:-.1em;margin:55px 0 18px}
+.menu-category p{font-size:14px;line-height:1.7;max-width:440px;margin:0}
+@media(max-width:760px){
+ .menu-section{padding:70px 0}
+ .menu-heading{font-size:clamp(76px,20vw,120px);margin:38px 0 30px}
+ .menu-subnav{grid-template-columns:1fr;gap:0}
+ .menu-subnav a{padding:14px 0;border-bottom:1px solid var(--line)}
+ .menu-subnav a:last-child{border-bottom:0}
+ .menu-category{padding:28px 22px;min-height:230px}
+ .menu-category h2{font-size:clamp(62px,17vw,96px);margin:52px 0 18px}
+}
