@@ -339,3 +339,10 @@ html,body,body *{font-family:'Barriecito',cursive!important}
   .visit-section.inner-page{padding-top:24px;}
   .visit-inner h1{margin-top:0;}
 }
+
+/* Crop the unused top strip of the HOME poster on mobile */
+@media(max-width:760px){
+  .poster-hero{aspect-ratio:1.82!important;overflow:hidden!important;}
+  .poster-artwork{width:100%!important;height:100%!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center bottom!important;}
+  .poster-navigation{top:0!important;height:100%!important;justify-content:center!important;}
+}
