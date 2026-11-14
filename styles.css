@@ -153,3 +153,15 @@
  .menu-category{padding:28px 22px;min-height:230px}
  .menu-category h2{font-size:clamp(62px,17vw,96px);margin:52px 0 18px}
 }
+
+/* Multi-page LURK site navigation and page layouts */
+.site-header{min-height:82px;padding:14px max(24px,calc((100% - 1280px)/2));display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line);background:var(--paper)}
+.site-brand img{display:block;width:125px;height:auto}.site-nav{display:flex;align-items:center;gap:clamp(12px,2.2vw,30px)}.site-nav a{font:10px var(--mono);letter-spacing:.08em;white-space:nowrap}.site-nav a:hover{color:var(--orange)}.site-menu-toggle{display:none;background:none;border:1px solid var(--ink);padding:8px 12px;font-size:18px;color:var(--ink)}
+.inner-page{min-height:65vh}.menu-page{padding-top:clamp(70px,9vw,120px);padding-bottom:100px}.menu-page>h1,.inner-page h1{font-size:clamp(76px,14vw,180px);line-height:.8;letter-spacing:-.11em;margin:42px 0 38px;font-weight:900}.menu-page>h1 span{color:var(--orange)}
+.home-intro{padding:clamp(90px,12vw,160px) 0}.home-intro h1{font-size:clamp(100px,18vw,230px);line-height:.72;letter-spacing:-.12em;margin:40px 0}.home-intro h1 em,.inner-page h1 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.09em}.home-intro>p:not(.eyebrow){font-size:18px}.home-shortcuts{display:flex;flex-wrap:wrap;gap:14px;margin-top:55px}.home-shortcuts a{border:1px solid var(--ink);border-radius:40px;padding:14px 18px;font:10px var(--mono);letter-spacing:.08em}.home-shortcuts a:hover{background:var(--ink);color:var(--paper)}
+.story-section.inner-page{padding:clamp(90px,12vw,160px) 0;background:#e7dfcf}.story-layout{grid-template-columns:1fr 1.4fr}.story-layout h1{grid-column:2;margin:0}.story-layout .story-placeholder{grid-column:2}
+.order-section.inner-page{min-height:70vh;display:flex;align-items:center}.order-layout h1,.reviews-layout h1,.visit-inner h1{font-size:clamp(60px,9vw,118px);line-height:.82;letter-spacing:-.095em;margin:30px 0 0}
+.reviews-section.inner-page{padding:clamp(90px,12vw,150px) 0;min-height:70vh}.reviews-layout h1{margin:35px 0 0}
+.visit-section.inner-page{min-height:70vh;display:flex;align-items:center}
+.site-footer{min-height:100px;padding:24px max(24px,calc((100% - 1280px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px}.site-footer img{width:110px;height:auto;display:block}.site-footer span{font:9px var(--mono);letter-spacing:.1em}
+@media(max-width:850px){.site-header{min-height:70px;padding:12px 18px}.site-brand img{width:108px}.site-menu-toggle{display:block}.site-nav{display:none;position:absolute;z-index:20;top:70px;left:0;right:0;padding:22px 20px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.site-nav.open{display:flex}.site-nav a{font-size:11px}.story-layout{grid-template-columns:1fr;gap:24px}.story-layout h1,.story-layout .story-placeholder{grid-column:1}.home-shortcuts{flex-direction:column;align-items:flex-start}.site-footer{display:grid;grid-template-columns:1fr 1fr}.site-footer>*:nth-child(even){text-align:right}.site-footer span{font-size:8px}}
