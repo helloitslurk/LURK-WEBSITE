@@ -363,3 +363,19 @@ html,body,body *{font-family:'Barriecito',cursive!important}
   .poster-navigation{top:0!important;height:100%!important;width:31%!important;padding:2% 1%!important;gap:clamp(5px,1.4vw,10px)!important;}
   .poster-navigation a{font-size:clamp(9px,2.45vw,14px)!important;}
 }
+
+/* Fix mobile menu stacking and increase HOME poster copy by 5px */
+@media(max-width:850px){
+  .site-header{position:relative;z-index:50;}
+  .site-menu-toggle{position:relative;z-index:61;cursor:pointer;touch-action:manipulation;}
+  .site-nav{z-index:60!important;}
+  .site-nav.open{display:flex!important;}
+}
+.poster-intro-copy .eyebrow{font-size:clamp(16px,calc(1.25vw + 5px),23px);}
+.poster-intro-copy h1{font-size:clamp(67px,calc(8.5vw + 5px),133px);}
+.poster-intro-copy .poster-tagline{font-size:clamp(19px,calc(1.65vw + 5px),28px);}
+@media(max-width:760px){
+  .poster-intro-copy .eyebrow{font-size:clamp(12px,calc(2vw + 5px),15px);}
+  .poster-intro-copy h1{font-size:clamp(43px,calc(10.4vw + 5px),63px);}
+  .poster-intro-copy .poster-tagline{font-size:clamp(14px,calc(2.5vw + 5px),18px);}
+}
