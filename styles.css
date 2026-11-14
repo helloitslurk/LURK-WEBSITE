@@ -451,3 +451,14 @@ html,body,body *{font-family:'Barriecito',cursive!important}
   body.home-page .poster-intro-copy{top:45%;}
   body.home-page .poster-navigation{transform:translateY(-10%);}
 }
+
+
+/* OUR LITTLE WORLD: Instagram profile embed */
+.instagram-section{padding:clamp(75px,10vw,130px) 0;background:#f7f5ed;color:var(--ink)}
+.instagram-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,7vw,100px);align-items:start}
+.instagram-heading h2{font-size:clamp(48px,7vw,94px);line-height:.86;letter-spacing:-.09em;margin:32px 0}
+.instagram-heading h2 em{font-family:Georgia,serif;font-weight:400;color:var(--orange)}
+.instagram-profile-link{display:inline-block;font:11px var(--mono);letter-spacing:.1em;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.instagram-embed-wrap{width:100%;min-width:0}
+.instagram-embed-wrap .instagram-media{min-width:0!important;width:100%!important}
+@media(max-width:850px){.instagram-layout{grid-template-columns:1fr;gap:28px}.instagram-heading h2{font-size:clamp(52px,13vw,82px)}}
