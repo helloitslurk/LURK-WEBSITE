@@ -208,3 +208,15 @@ body{background:var(--paper);color:var(--ink)}
  .menu-category{min-height:245px}.menu-category h2{margin-top:55px}
  .story-section.inner-page:before{inset:45% 0 0}.site-footer{padding-top:24px;padding-bottom:24px}
 }
+
+/* LURK typography palette: green headlines, orange emphasis, lime accents */
+:root{--text-green:#344d35;--text-orange:#e96a3d;--text-lime:#a6b92f}
+h1,h2,h3{color:var(--text-green)}
+h1 em,h2 em,h3 em,.home-intro h1 em,.story-layout h1 em,.reviews-layout h1 em,.visit-inner h1 em{color:var(--text-orange)}
+h1 span,h2 span,h3 span{color:var(--text-orange)}
+.eyebrow,.menu-category-top{color:var(--text-green)}
+a:hover{transition:color .2s ease}
+.menu-subnav a:hover,.site-nav a:hover{color:var(--text-orange)}
+.ticker,.menu-subnav a:focus-visible{background-color:var(--lime)}
+.home-intro h1{color:var(--text-green)}
+.home-intro h1 em{color:var(--text-orange)}
