@@ -445,3 +445,9 @@ html,body,body *{font-family:'Barriecito',cursive!important}
     white-space:nowrap;
   }
 }
+
+/* DESKTOP HOME: lift poster content slightly within the fitted viewport */
+@media(min-width:851px){
+  body.home-page .poster-intro-copy{top:45%;}
+  body.home-page .poster-navigation{transform:translateY(-5%);}
+}
