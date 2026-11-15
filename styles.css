@@ -764,3 +764,33 @@ body:not(.home-page) .instagram-section{
 html,body,body *{
   font-family:'Jellee',cursive!important;
 }
+
+
+/* ORDER PAGE: keep the complete page within one screen */
+body:not(.home-page):has(.order-section){
+  min-height:100svh!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+body:has(.order-section) main{flex:1 0 auto!important;display:flex!important;}
+.order-section.inner-page{
+  box-sizing:border-box!important;
+  width:100%!important;
+  min-height:0!important;
+  height:auto!important;
+  flex:1 0 auto!important;
+  display:flex!important;
+  align-items:center!important;
+  padding:clamp(24px,4.5vh,54px) 0!important;
+}
+.order-layout{width:100%!important;align-items:center!important;gap:clamp(24px,5vw,72px)!important;}
+.order-layout h1{font-size:clamp(54px,7.5vw,104px)!important;line-height:.82!important;margin:12px 0 0!important;}
+.order-links a{padding:clamp(13px,2.2vh,21px) 0!important;font-size:12px!important;}
+.order-links small{display:none!important;}
+@media(max-width:850px){
+  body:has(.order-section) main{flex:1 0 auto!important;}
+  .order-section.inner-page{padding:clamp(20px,3.5vh,34px) 0!important;}
+  .order-layout{grid-template-columns:1fr!important;gap:clamp(18px,3.5vh,30px)!important;}
+  .order-layout h1{font-size:clamp(48px,12vw,72px)!important;line-height:.82!important;margin:0!important;}
+  .order-links a{padding:clamp(12px,2vh,17px) 0!important;font-size:11px!important;}
+}
