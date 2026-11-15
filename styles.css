@@ -1196,7 +1196,7 @@ body.one-page-site .hero-preview-matcha h2{text-align:left}
 body.one-page-site .hero-preview-coffee h2{text-align:right}
 body.one-page-site .hero-preview-images{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 body.one-page-site .hero-preview-coffee .hero-preview-images{direction:rtl}
-body.one-page-site .hero-preview-images a{display:block;aspect-ratio:1/1;overflow:hidden;background:#eee9dc}
+body.one-page-site .hero-preview-images a{display:block;aspect-ratio:1/1;overflow:hidden;background:#183b2b}
 body.one-page-site .hero-preview-images img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
 body.one-page-site .hero-preview-images a:hover img{transform:scale(1.07)}
 @media(max-width:760px){
