@@ -1208,21 +1208,16 @@ body.one-page-site .hero-preview-images a:hover img{transform:scale(1.07)}
 }
 
 
-/* Balance the visible cup sizes in the coffee hero thumbnails.
-   The coffee row is RTL, so nth-child(4) appears at the far left. */
-body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(1) img,
-body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(3) img{
- transform:scale(.86);
+/* Refine coffee thumbnail scale without exposing green edge bands.
+   Keep every photo tile fully covered; only enlarge the cups that read smaller. */
+body.one-page-site .hero-preview-coffee .hero-preview-images img{
+ transform:scale(1);
 }
 body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(2) img,
 body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(4) img{
- transform:scale(1.18);
-}
-body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(1):hover img,
-body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(3):hover img{
- transform:scale(.92);
+ transform:scale(1.16);
 }
 body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(2):hover img,
 body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(4):hover img{
- transform:scale(1.25);
+ transform:scale(1.22);
 }
