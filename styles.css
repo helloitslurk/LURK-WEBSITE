@@ -1206,3 +1206,18 @@ body.one-page-site .hero-preview-images a:hover img{transform:scale(1.07)}
  body.one-page-site .hero-preview-group h2{font-size:clamp(24px,7vw,38px);margin-bottom:10px}
  body.one-page-site .hero-preview-images{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
 }
+
+
+/* Normalize drink scale inside the coffee hero thumbnails */
+body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(3) img{
+ transform:scale(1.22);
+}
+body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(4) img{
+ transform:scale(.82);
+}
+body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(3):hover img{
+ transform:scale(1.29);
+}
+body.one-page-site .hero-preview-coffee .hero-preview-images a:nth-child(4):hover img{
+ transform:scale(.89);
+}
