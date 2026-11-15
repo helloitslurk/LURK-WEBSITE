@@ -751,3 +751,16 @@ body:not(.home-page) .instagram-section{
  .business-info-inner>.eyebrow,.business-info-inner h2,.business-info-details{grid-column:1!important}
  .business-info-inner h2{font-size:clamp(42px,12vw,64px)!important}
 }
+
+
+/* JELLEE FONT TEST */
+@font-face{
+  font-family:'Jellee';
+  src:url('/assets/Jellee-Bold.woff2') format('woff2');
+  font-style:normal;
+  font-weight:700;
+  font-display:swap;
+}
+html,body,body *{
+  font-family:'Jellee',cursive!important;
+}
