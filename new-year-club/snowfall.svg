@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 496">
+<defs>
+ <g id="flake" fill="none" stroke="#fffdf7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M0-24V24M-20-12L20 12M-20 12L20-12"/>
+  <path d="M0-24l-5 7m5-7 5 7M0 24l-5-7m5 7 5-7M-20-12l8 1m-8-1 3 7M20 12l-8-1m8 1-3-7M-20 12l8-1m-8 1 3-7M20-12l-8 1m8-1-3 7"/>
+ </g>
+ <g id="tiny" fill="#fffdf7"><circle r="3.5"/></g>
+</defs>
+<!-- falling snow, mixed sizes -->
+<g opacity=".98">
+ <use href="#flake" transform="translate(82 60) scale(.55)"/><use href="#flake" transform="translate(205 105) scale(.85)"/>
+ <use href="#flake" transform="translate(370 35) scale(.38)"/><use href="#flake" transform="translate(510 95) scale(.65)"/>
+ <use href="#flake" transform="translate(720 42) scale(.48)"/><use href="#flake" transform="translate(930 82) scale(.78)"/>
+ <use href="#flake" transform="translate(1085 45) scale(.48)"/><use href="#flake" transform="translate(1120 210) scale(.82)"/>
+ <use href="#flake" transform="translate(1010 330) scale(.55)"/><use href="#flake" transform="translate(900 455) scale(.8)"/>
+ <use href="#flake" transform="translate(720 420) scale(.55)"/><use href="#flake" transform="translate(525 465) scale(.78)"/>
+ <use href="#flake" transform="translate(330 420) scale(.48)"/><use href="#flake" transform="translate(150 450) scale(.9)"/>
+ <use href="#flake" transform="translate(35 300) scale(.72)"/><use href="#flake" transform="translate(65 190) scale(.5)"/>
+ <use href="#flake" transform="translate(270 300) scale(.42)"/><use href="#flake" transform="translate(840 170) scale(.4)"/>
+ <use href="#flake" transform="translate(1060 390) scale(.45)"/><use href="#flake" transform="translate(430 220) scale(.36)"/>
+ <use href="#tiny" transform="translate(25 120)"/><use href="#tiny" transform="translate(155 25)"/><use href="#tiny" transform="translate(290 170)"/>
+ <use href="#tiny" transform="translate(405 65)"/><use href="#tiny" transform="translate(590 160)"/><use href="#tiny" transform="translate(650 25)"/>
+ <use href="#tiny" transform="translate(790 105)"/><use href="#tiny" transform="translate(985 150)"/><use href="#tiny" transform="translate(1140 120)"/>
+ <use href="#tiny" transform="translate(1140 290)"/><use href="#tiny" transform="translate(980 250)"/><use href="#tiny" transform="translate(825 300)"/>
+ <use href="#tiny" transform="translate(690 485)"/><use href="#tiny" transform="translate(570 350)"/><use href="#tiny" transform="translate(390 480)"/>
+ <use href="#tiny" transform="translate(245 370)"/><use href="#tiny" transform="translate(100 390)"/><use href="#tiny" transform="translate(20 470)"/>
+</g>
+<!-- Santa hat placed on the top of the L -->
+<g transform="translate(6,-8) rotate(-13 95 70)">
+ <path d="M18 88C34 47 70 6 132 8C156 9 173 31 188 61C144 53 104 62 68 92Z" fill="#c9252d"/>
+ <path d="M18 88C56 76 118 65 188 61" fill="none" stroke="#fffaf0" stroke-width="24" stroke-linecap="round"/>
+ <path d="M18 88C56 76 118 65 188 61" fill="none" stroke="#e9e1d5" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+ <circle cx="18" cy="88" r="18" fill="#fffaf0"/>
+ <path d="M4 87c5-16 25-19 34-5 7 12-1 27-14 29C11 113 0 101 4 87Z" fill="#fffaf0"/>
+</g>
+</svg>
