@@ -167,6 +167,11 @@
     /* Align Santa hat directly with the upper stroke of the L */
     .festive-logo .santa-hat{left:0.8%;top:-18%;width:13%;height:23%;transform:rotate(-12deg)}
     @media(max-width:600px){.festive-logo .santa-hat{left:0.8%;top:-18%;width:14%;height:24%}.holly{right:10%;top:-15%;transform:scale(.78) rotate(12deg)}}
+
+    /* Fix: decorations are positioned relative to the centered logo itself */
+    .hero.logo-splash .opening-logo{position:relative!important;top:auto!important;left:auto!important;transform:none!important;isolation:isolate}
+    .hero.logo-splash .santa-hat{left:.5%;top:-15%;width:14%;height:24%;transform:rotate(-12deg)}
+    @media(max-width:600px){.hero.logo-splash .santa-hat{left:.5%;top:-15%;width:15%;height:25%}}
   </style>
 </head>
 <body>
