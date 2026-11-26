@@ -179,6 +179,14 @@
     .hero.logo-splash .opening-logo .snowfall-overlay{position:absolute;inset:0;z-index:2;display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
     @media(max-width:800px){.hero.logo-splash .opening-logo{width:min(78vw,560px)}}
     @media(max-width:600px){.hero.logo-splash .opening-logo{width:min(82vw,460px)}}
+
+    /* Full-viewport snowfall, with the hat attached to the L */
+    .hero.logo-splash{position:relative;isolation:isolate}
+    .hero.logo-splash>.snowfall-overlay{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+    .hero.logo-splash .opening-logo{z-index:2}
+    .hero.logo-splash .opening-logo .wordmark{z-index:1}
+    .hero.logo-splash .opening-logo .santa-hat-art{position:absolute;z-index:3;left:-2.5%;top:-22%;width:23%;height:auto;display:block;filter:none;transform:rotate(-8deg);pointer-events:none}
+    @media(max-width:600px){.hero.logo-splash .opening-logo .santa-hat-art{left:-2%;top:-21%;width:24%}}
   </style>
 </head>
 <body>
@@ -192,9 +200,10 @@
   </header>
   <main id="top">
     <section class="hero logo-splash" id="club" aria-label="LURK">
+      <img class="snowfall-overlay" src="./snowfall-full.svg" alt="" aria-hidden="true">
       <div class="opening-logo festive-logo">
         <img class="wordmark" src="./lurk-logo.svg" alt="LURK">
-        <img class="snowfall-overlay" src="./snowfall.svg" alt="" aria-hidden="true">
+        <img class="santa-hat-art" src="./santa-hat.svg" alt="" aria-hidden="true">
       </div>
     </section>
     <div class="ticker" style="text-align:center;letter-spacing:.24em">LURK COFFEE <b>✳</b> NEW YEAR EDITION <b>✳</b> ABBASAĞA / ISTANBUL</div>
