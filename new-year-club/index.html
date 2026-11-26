@@ -195,13 +195,26 @@
     }
     /* Red horizontal campaign ribbon under the wordmark */
     .hero.logo-splash .new-year-ribbon{
-      position:absolute;z-index:4;left:-5%;bottom:-23%;width:110%;height:clamp(34px,5.5vw,54px);
+      position:absolute;z-index:4;left:-5%;bottom:-23%;width:110%;height:clamp(38px,5.8vw,58px);
       display:flex;align-items:center;justify-content:center;
-      background:#a91f2b;color:#fff4e7;
-      box-shadow:0 5px 0 rgba(0,0,0,.13);
+      background:linear-gradient(180deg,#c12d38 0%,#a91f2b 52%,#861923 100%);color:#fff4e7;
+      border-top:1px solid rgba(255,245,225,.55);border-bottom:2px solid rgba(70,0,8,.35);
+      box-shadow:0 7px 0 rgba(0,0,0,.14),0 12px 22px rgba(0,0,0,.12),inset 0 2px 4px rgba(255,255,255,.13);
       font:500 clamp(11px,1.65vw,18px) var(--mono);
       letter-spacing:.24em;text-align:center;
+      transform-origin:50% 0;
+      animation:ribbon-sway 3.8s ease-in-out infinite;
     }
+    .hero.logo-splash .new-year-ribbon span:before,
+    .hero.logo-splash .new-year-ribbon span:after{
+      content:"✳";display:inline-block;color:#f5d9b7;font-size:.78em;vertical-align:1px;
+      margin:0 1.1em;text-shadow:0 1px 2px #64111a;
+    }
+    @keyframes ribbon-sway{
+      0%,100%{transform:rotate(-1.1deg) translateY(0)}
+      50%{transform:rotate(1.1deg) translateY(2px)}
+    }
+    @media(prefers-reduced-motion:reduce){.hero.logo-splash .new-year-ribbon{animation:none}}
     .hero.logo-splash .new-year-ribbon:before,
     .hero.logo-splash .new-year-ribbon:after{
       content:"";position:absolute;top:0;width:0;height:0;border-top:calc(clamp(34px,5.5vw,54px)/2) solid #761720;
@@ -212,7 +225,7 @@
     .hero.logo-splash .new-year-ribbon span{position:relative;z-index:1}
     @media(max-width:600px){
       .hero.logo-splash .opening-logo .santa-hat-art{left:-1%;top:-13%;width:17.5%}
-      .hero.logo-splash .new-year-ribbon{left:-3%;width:106%;bottom:-24%;height:36px;font-size:11px;letter-spacing:.18em}
+      .hero.logo-splash .new-year-ribbon{left:-3%;width:106%;bottom:-24%;height:38px;font-size:11px;letter-spacing:.18em}
       .hero.logo-splash .new-year-ribbon:before,.hero.logo-splash .new-year-ribbon:after{border-top-width:18px;border-bottom-width:18px}
     }
   </style>
