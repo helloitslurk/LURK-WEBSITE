@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10291f">
+  <meta name="description" content="LURK New Year Club. Yeni yıla LURK'le, özel sürprizlerle gir.">
+  <title>LURK New Year Club · 2026/27</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#10291f;--green2:#19392b;--cream:#f1e8d5;--paper:#e7dcc5;--red:#762e32;--ink:#18251e;--muted:#b8b49f;--line:rgba(241,232,213,.2);--mono:'DM Mono',monospace;--sans:'DM Sans',sans-serif;--serif:'Playfair Display',Georgia,serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--green);color:var(--cream);font-family:var(--sans);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}
+    .grain{position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.075;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+    .topline{height:34px;background:var(--cream);color:var(--green);display:flex;align-items:center;justify-content:center;font:10px var(--mono);letter-spacing:.2em;text-transform:uppercase}
+    header{height:76px;padding:0 clamp(20px,5vw,76px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:10}
+    .brand{font-weight:800;letter-spacing:.25em;font-size:24px}.brand small{display:block;font:9px var(--mono);letter-spacing:.42em;margin-top:2px;text-align:center}
+    nav{display:flex;align-items:center;gap:30px;font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#d2cbb8}nav a:hover{color:#fff}
+    .nav-cta,.button{background:var(--red);color:var(--cream);padding:13px 19px;border:1px solid rgba(241,232,213,.35);font:11px var(--mono);letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center;gap:14px;transition:.2s}.nav-cta:hover,.button:hover{background:#8a3b3f;transform:translateY(-2px)}
+    .menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--cream);padding:8px 11px}
+    .hero{min-height:650px;padding:72px clamp(22px,7vw,110px) 64px;display:grid;grid-template-columns:1.08fr .92fr;gap:5vw;align-items:center;position:relative;overflow:hidden}
+    .hero:before{content:'27';position:absolute;right:-20px;top:-120px;font:700 clamp(300px,45vw,650px)/1 var(--serif);color:rgba(241,232,213,.035);pointer-events:none}
+    .eyebrow,.section-kicker{font:10px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:#c4b89d}
+    .eyebrow:before{content:'✳';color:#a65a56;margin-right:12px}
+    h1{font:700 clamp(64px,10vw,142px)/.82 var(--serif);letter-spacing:-.075em;margin:30px 0 24px;max-width:760px}
+    h1 em{color:#a74d4e;font-weight:600;display:block;margin-left:11%}
+    .hero-copy{font:italic 19px/1.55 var(--serif);color:#d8cfbc;max-width:430px;margin:28px 0 30px}
+    .hero-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.text-link{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #9a8d75;padding-bottom:6px}
+    .hero-art{min-height:480px;position:relative;display:flex;align-items:center;justify-content:center}
+    .orbit{width:min(39vw,470px);aspect-ratio:1;border:1px solid rgba(241,232,213,.28);border-radius:50%;position:absolute}
+    .orbit:before,.orbit:after{content:'✳';position:absolute;color:#c8b998;font-size:26px}.orbit:before{top:7%;left:14%}.orbit:after{bottom:10%;right:12%}
+    .poster-card{width:min(34vw,390px);min-width:280px;aspect-ratio: .78;background:var(--paper);color:var(--green);padding:22px;transform:rotate(3deg);box-shadow:18px 22px 0 rgba(0,0,0,.18);position:relative}
+    .poster-inner{height:100%;border:1px solid rgba(16,41,31,.42);padding:20px 17px;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:space-between;position:relative;overflow:hidden}
+    .poster-inner:before{content:'LURK';position:absolute;bottom:4px;left:0;right:0;font:800 74px var(--sans);letter-spacing:.15em;color:rgba(16,41,31,.045)}
+    .poster-top{font:9px var(--mono);letter-spacing:.25em}.poster-title{font:700 clamp(45px,6vw,76px)/.8 var(--serif);letter-spacing:-.08em;margin:15px 0}.poster-title span{display:block;color:var(--red);font-style:italic;margin:12px 0 0 22px}.cup{width:130px;height:112px;margin:5px auto 10px;position:relative}.cup svg{width:100%;height:100%}.poster-foot{font:9px var(--mono);letter-spacing:.16em;line-height:1.8}
+    .stamp{position:absolute;right:-23px;bottom:54px;width:100px;height:100px;border:1px solid var(--red);border-radius:50%;color:var(--red);display:grid;place-items:center;text-align:center;font:9px var(--mono);letter-spacing:.12em;transform:rotate(-13deg);background:var(--paper);outline:1px dashed var(--red);outline-offset:-7px}
+    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;overflow:hidden;white-space:nowrap;color:#c9bea7;font:10px var(--mono);letter-spacing:.2em;text-transform:uppercase}.ticker span{display:inline-block;animation:marquee 30s linear infinite}.ticker b{color:#a64b4d;margin:0 30px}@keyframes marquee{to{transform:translateX(-50%)}}
+    section.content{padding:100px clamp(22px,8vw,120px)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.section-head h2{font:600 clamp(42px,6vw,76px)/.95 var(--serif);letter-spacing:-.05em;margin:14px 0 0}.section-head p{max-width:320px;color:#c7c0ae;font-size:13px;line-height:1.7;margin:0}
+    .prizes{background:var(--cream);color:var(--green)}.prizes .section-kicker{color:#7b6a55}.prize-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px}.prize{min-height:245px;border:1px solid rgba(16,41,31,.25);padding:25px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.prize:first-child{background:var(--red);color:var(--cream);border:0}.prize-num{font:10px var(--mono);letter-spacing:.18em;text-transform:uppercase;opacity:.8}.prize-value{font:700 clamp(35px,5vw,62px)/1 var(--serif);letter-spacing:-.06em}.prize-label{font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase}.prize-mark{position:absolute;right:15px;top:18px;font:52px var(--serif);opacity:.14}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:start}.about-grid h2{font:600 clamp(42px,6vw,70px)/.95 var(--serif);letter-spacing:-.05em;margin:16px 0}.about-copy{color:#d0c8b6;font-size:15px;line-height:1.85;max-width:650px}.about-copy strong{color:var(--cream);font-weight:600}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:36px}.step{padding:24px 22px 28px 0}.step+.step{padding-left:22px;border-left:1px solid var(--line)}.step-no{font:11px var(--mono);color:#b05a55}.step h3{font:600 19px var(--serif);margin:18px 0 8px}.step p{font-size:12px;line-height:1.65;color:#bdb6a5;margin:0}
+    .notice{background:#1a392b;border:1px solid rgba(241,232,213,.2);padding:26px 28px;display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:34px}.notice strong{font:600 20px var(--serif)}.notice p{font-size:12px;line-height:1.6;color:#c8c0ae;margin:6px 0 0}.notice-tag{font:9px var(--mono);letter-spacing:.15em;text-transform:uppercase;color:#d8bba2;white-space:nowrap}
+    .faq{background:#0b2118}.faq-list{max-width:850px;margin-left:auto}.faq-item{border-top:1px solid var(--line)}.faq-item:last-child{border-bottom:1px solid var(--line)}.faq-q{width:100%;background:none;border:0;color:var(--cream);display:flex;justify-content:space-between;text-align:left;padding:22px 0;font:600 18px var(--serif);cursor:pointer}.faq-q span:last-child{font:18px var(--mono);color:#b15b56}.faq-a{display:none;color:#c4bdac;font-size:13px;line-height:1.8;padding:0 40px 22px 0;max-width:700px}.faq-item.open .faq-a{display:block}
+    footer{padding:35px clamp(22px,7vw,100px);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;color:#aaa48f;font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase}.footer-brand{font:800 20px var(--sans);letter-spacing:.25em;color:var(--cream)}
+    @media(max-width:800px){header{height:66px}.menu-toggle{display:block}nav{display:none;position:absolute;top:66px;left:0;right:0;background:var(--green);padding:22px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.nav-cta{display:none}.hero{grid-template-columns:1fr;padding-top:62px;gap:25px;min-height:auto}.hero-art{min-height:390px}.poster-card{width:290px}.orbit{width:340px}.hero:before{font-size:380px;top:20px}.section-head{display:block}.section-head p{margin-top:18px}.prize-grid{grid-template-columns:1fr}.prize{min-height:190px}.about-grid{grid-template-columns:1fr;gap:25px}.steps{grid-template-columns:1fr}.step,.step+.step{padding:20px 0;border-left:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}.notice{align-items:flex-start;flex-direction:column}footer{flex-direction:column;align-items:flex-start}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="topline">LURK COFFEE · ABBASAĞA / ISTANBUL · 2026—2027</div>
+  <header>
+    <a class="brand" href="#top">LURK<small>COFFEE CLUB</small></a>
+    <button class="menu-toggle" aria-label="Menüyü aç" aria-expanded="false">MENU +</button>
+    <nav>
+      <a href="#club">The Club</a><a href="#prizes">Ödüller</a><a href="#how">Nasıl işler?</a><a href="#faq">SSS</a>
+    </nav>
+    <a class="nav-cta" href="#club">Keşfet <span>↗</span></a>
+  </header>
+  <main id="top">
+    <section class="hero" id="club">
+      <div class="hero-copy-wrap">
+        <div class="eyebrow">A little holiday feeling, by LURK</div>
+        <h1>NEW YEAR <em>CLUB.</em></h1>
+        <p class="hero-copy">Yeni yıla biraz kahve, biraz şans ve LURK'e özel sürprizlerle giriyoruz.</p>
+        <div class="hero-actions"><a class="button" href="#prizes">Kulübü keşfet <span>↗</span></a><a class="text-link" href="#how">Nasıl işleyecek?</a></div>
+      </div>
+      <div class="hero-art" aria-label="LURK New Year Club poster illustration">
+        <div class="orbit"></div>
+        <div class="poster-card"><div class="poster-inner">
+          <div class="poster-top">LURK.EXE&nbsp;&nbsp; / &nbsp;&nbsp;HOLIDAY EDITION</div>
+          <div><div class="poster-title">NEW YEAR<span>CLUB</span></div>
+            <div class="cup"><svg viewBox="0 0 150 125" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 38H112L103 102Q101 113 89 113H45Q33 113 31 102L22 38Z" fill="#10291f"/><path d="M112 51H126Q143 51 139 72Q136 91 108 88" stroke="#10291f" stroke-width="9"/><path d="M35 52H101" stroke="#d8cdb6" stroke-width="2"/><path d="M48 18C42 9 56 8 49 0M72 18C66 9 80 8 73 0M96 18C90 9 104 8 97 0" stroke="#762e32" stroke-width="3" stroke-linecap="round"/><path d="M54 73C65 60 79 60 91 73" stroke="#d8cdb6" stroke-width="2"/><path d="M72 61L75 69L84 70L77 76L79 85L72 80L65 85L67 76L60 70L69 69L72 61Z" fill="#d8cdb6"/></svg></div>
+          </div>
+          <div class="poster-foot">GOOD COFFEE · GOOD LUCK<br>EST. ABBASAĞA / ISTANBUL</div>
+        </div></div>
+        <div class="stamp">A VERY<br>LURK<br>NEW YEAR</div>
+      </div>
+    </section>
+    <div class="ticker"><span>GOOD COFFEE <b>✳</b> GOOD LUCK <b>✳</b> NEW YEAR CLUB <b>✳</b> MADE WITH LOVE IN ABBASAĞA <b>✳</b> GOOD COFFEE <b>✳</b> GOOD LUCK <b>✳</b> NEW YEAR CLUB <b>✳</b> MADE WITH LOVE IN ABBASAĞA <b>✳</b></span></div>
+    <section class="content prizes" id="prizes">
+      <div class="section-head"><div><div class="section-kicker">01 / The good stuff</div><h2>Üç ödül.<br>Bir LURK ruhu.</h2></div><p>Yeni yıl heyecanına LURK dokunuşu ekliyoruz. Kulübün ödülleri LURK bakiyesi olarak tasarlandı.</p></div>
+      <div class="prize-grid">
+        <article class="prize"><span class="prize-num">01 · Büyük ödül</span><span class="prize-mark">✳</span><div><div class="prize-value">2.000 ₺</div><div class="prize-label">LURK bakiyesi</div></div></article>
+        <article class="prize"><span class="prize-num">02 · Sürpriz ödül</span><span class="prize-mark">✳</span><div><div class="prize-value">01</div><div class="prize-label">LURK bakiyesi · detaylar açıklanacak</div></div></article>
+        <article class="prize"><span class="prize-num">03 · Sürpriz ödül</span><span class="prize-mark">✳</span><div><div class="prize-value">02</div><div class="prize-label">LURK bakiyesi · detaylar açıklanacak</div></div></article>
+      </div>
+    </section>
+    <section class="content" id="how">
+      <div class="about-grid">
+        <div><div class="section-kicker">02 / A note from LURK</div><h2>Küçük bir kulüp,<br>güzel bir yılbaşı.</h2></div>
+        <div class="about-copy"><p><strong>LURK New Year Club</strong>, yeni yılı birlikte karşılamak için hazırladığımız özel bir yılbaşı projesi. Burada mesele yalnızca ödüller değil; LURK topluluğuyla paylaşacağımız küçük bir heyecan.</p><p>Kampanyanın kesin katılım yöntemi, tarihleri ve tüm koşulları netleştiğinde bu sayfada duyurulacak. Şimdilik sayfa, projenin dünyasını keşfetmen için burada.</p>
+          <div class="steps"><div class="step"><div class="step-no">STEP 01</div><h3>Keşfet</h3><p>LURK New Year Club'ı ve ödülleri tanı.</p></div><div class="step"><div class="step-no">STEP 02</div><h3>Duyuruyu bekle</h3><p>Katılım yöntemi ve tarihler kesinleşince burada paylaşılacak.</p></div><div class="step"><div class="step-no">STEP 03</div><h3>Güncel kal</h3><p>Yeni gelişmeler için LURK Instagram hesabını takip et.</p></div></div>
+        </div>
+      </div>
+      <div class="notice"><div><strong>Henüz katılım başlamadı.</strong><p>Bu sayfa şu an tanıtım ve konsept sayfasıdır. Katılım, ödeme veya kayıt alınmamaktadır.</p></div><div class="notice-tag">STATUS: PRE-LAUNCH</div></div>
+    </section>
+    <section class="content faq" id="faq">
+      <div class="section-head"><div><div class="section-kicker">03 / Good to know</div><h2>Aklına takılanlar.</h2></div><p>Proje ve duyurularla ilgili temel bilgiler.</p></div>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">LURK New Year Club nedir?<span>＋</span></button><div class="faq-a">LURK tarafından hazırlanan, yeni yıl dönemine özel ödül ve topluluk etkinliği konseptidir.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Katılım ne zaman başlayacak?<span>＋</span></button><div class="faq-a">Katılım yöntemi, takvim ve koşullar kesinleştiğinde bu sayfa ve LURK'ün sosyal medya hesapları üzerinden duyurulacaktır.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Ödüller nasıl kullanılacak?<span>＋</span></button><div class="faq-a">Büyük ödül için 2.000 TL LURK bakiyesi planlanmaktadır. Kullanım koşulları ve diğer ödüllerin tutarları kesin kampanya duyurusunda açıklanacaktır.</div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Şu anda kayıt veya ödeme yapabilir miyim?<span>＋</span></button><div class="faq-a">Hayır. Bu ön izleme sayfasında herhangi bir kayıt veya ödeme alınmamaktadır.</div></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#top">LURK</a><span>COFFEE · MATCHA · GOOD MEMORIES</span><span>© 2026 LURK NEW YEAR CLUB</span></footer>
+  <script>
+    const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('nav');
+    toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'CLOSE −':'MENU +'});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='MENU +'}));
+    document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.closest('.faq-item');const open=item.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.querySelector('span').textContent=open?'−':'＋'}));
+  </script>
+</body>
+</html>
